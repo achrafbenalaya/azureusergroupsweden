@@ -1,0 +1,27 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="localGradient" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#005A9E" />
+      <stop offset="1" stop-color="#002B45" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2C200" />
+      <stop offset="1" stop-color="#F0B000" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="32" fill="url(#localGradient)" />
+  <g opacity="0.25">
+    <path d="M160 120H640L685 195L640 270H160L115 195L160 120Z" stroke="#0CAFFF" stroke-width="3" />
+    <path d="M220 180H580L610 228L580 276H220L190 228L220 180Z" stroke="#0CAFFF" stroke-width="3" stroke-dasharray="10 10" />
+  </g>
+  <circle cx="400" cy="170" r="60" fill="url(#accent)" />
+  <path d="M400 140L420 170H380L400 140Z" fill="#002B45" />
+  <path d="M400 170V215" stroke="#002B45" stroke-width="6" stroke-linecap="round" />
+  <circle cx="400" cy="220" r="8" fill="#002B45" />
+  <text x="50%" y="65%" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="600">
+    In-Person Meetup
+  </text>
+  <text x="50%" y="78%" text-anchor="middle" fill="#0CAFFF" font-family="Segoe UI, Arial, sans-serif" font-size="26">
+    Stockholm - Azure Reactor
+  </text>
+</svg>

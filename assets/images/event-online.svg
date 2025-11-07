@@ -1,0 +1,20 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="onlineGradient" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0078D4" />
+      <stop offset="1" stop-color="#0CAFFF" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="32" fill="url(#onlineGradient)" />
+  <g opacity="0.3">
+    <path d="M120 90H680V360H120V90Z" stroke="white" stroke-width="2" stroke-dasharray="12 12"/>
+    <path d="M200 150H600V300H200V150Z" stroke="white" stroke-width="2" />
+    <path d="M260 210H540V270H260V210Z" stroke="white" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <text x="50%" y="52%" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="600">
+    Azure Livestream
+  </text>
+  <text x="50%" y="70%" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="28">
+    Online Session
+  </text>
+</svg>

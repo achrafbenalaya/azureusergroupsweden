@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Azure User Group Sweden</title>
+    <meta
+      name="description"
+      content="Azure User Group Sweden brings cloud enthusiasts together through meetups, workshops, and community events across Sweden."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/azure-grid.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="nav__brand" href="index.html">
+          <span class="nav__logo">AU</span>
+          <span>Azure User Group Sweden</span>
+        </a>
+        <nav>
+          <button
+            class="nav__toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >Menu</button>
+          <ul class="nav__links" id="primary-navigation" data-nav-links>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__logo" aria-hidden="true">
+          <span>AZ</span>
+        </div>
+        <h1 class="hero__title">Azure User Group Sweden</h1>
+        <p class="hero__tagline">For the community by the community</p>
+        <p class="hero__text">
+          We are a volunteer-driven community for developers, architects, IT pros, and tech enthusiasts who build on
+          Microsoft Azure. Join us to learn together, share experiences, and connect with peers across Sweden and beyond.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="contact.html#contact-form">Join Us</a>
+          <a class="btn btn--ghost" href="events.html">Upcoming Events</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <div class="container grid-two">
+          <div>
+            <div class="badge">Sweden&apos;s Azure Community</div>
+            <h2>Why Azure User Group Sweden?</h2>
+            <p>
+              Since 2017, our group has hosted talks, labs, and meetups that showcase real stories from the Azure
+              ecosystem. We amplify the voices of local experts while collaborating with Microsoft to highlight global
+              innovations.
+            </p>
+            <p>
+              Expect curated sessions, honest discussions, and hands-on experiences tailored for the cloud-first
+              professional. Whether you are just starting or architecting at scale, you&apos;re welcome here.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Community Highlights</h3>
+            <ul class="values-list">
+              <li>
+                <div>
+                  <strong>Monthly Meetups</strong>
+                  <span>Hybrid events with experts from Scandinavia and beyond.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Hands-on Workshops</strong>
+                  <span>Guided labs to explore Azure AI, DevOps, Data, Security, and FinOps.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Global Reach</strong>
+                  <span>Livestreams, recordings, and resources to support the wider Azure community.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Featured Tracks</h2>
+            <p class="section__subtitle">
+              We curate content that reflects the fast-moving Azure landscape so you can focus on what matters.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3 class="card__title">Build with AI</h3>
+              <p>
+                Learn how to bring intelligence into your solutions with Azure OpenAI, Cognitive Services, and AI
+                Studio. We showcase real journeys and proven architectures.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">DevOps &amp; Platform</h3>
+              <p>
+                Streamline delivery pipelines, embrace GitHub Advanced Security, and leverage Azure DevOps for teams of
+                any size.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Data &amp; Analytics</h3>
+              <p>
+                Explore best practices for Azure Data Lake, Synapse, Fabric, and governance strategies that scale with
+                confidence.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Cloud Fundamentals</h3>
+              <p>
+                Master the foundations: landing zones, security, cost management, and resilient operations in Azure.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer__content">
+        <span class="footer__brand">Azure User Group Sweden</span>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a>
+        </div>
+        <small>&copy; <span id="year"></span> Azure User Group Sweden. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>Top</button>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

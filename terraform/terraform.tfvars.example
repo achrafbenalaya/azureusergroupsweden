@@ -1,0 +1,15 @@
+# Customize these values for your deployment
+resource_group_name      = "rg-augs-prod"
+location                 = "westeurope"
+static_web_app_name      = "swa-augs-prod"
+static_web_app_location  = "westeurope"
+sku_tier                 = "Free"
+sku_size                 = "Free"
+environment              = "production"
+
+common_tags = {
+  Application = "AzureUserGroupSweden"
+  CostCenter  = "Community"
+  Owner       = "DevOps Team"
+  DeployedBy  = "Terraform"
+}

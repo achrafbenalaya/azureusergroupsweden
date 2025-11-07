@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Intro to Azure AI",
+    "date": "2025-03-10",
+    "time": "17:00 CET",
+    "type": "Online",
+    "image": "/assets/images/event-online.svg",
+    "location": "",
+    "registrationUrl": "https://aka.ms/augs-ai-session"
+  },
+  {
+    "title": "Hands-on Azure DevOps Workshop",
+    "date": "2025-04-02",
+    "time": "18:00 CET",
+    "type": "Local",
+    "image": "/assets/images/event-local.svg",
+    "location": "Microsoft Reactor Stockholm",
+    "registrationUrl": "https://aka.ms/augs-devops-workshop"
+  },
+  {
+    "title": "Build Intelligent Apps with Azure OpenAI",
+    "date": "2025-05-15",
+    "time": "12:00 CET",
+    "type": "Online",
+    "image": "/assets/images/event-online.svg",
+    "location": "",
+    "registrationUrl": "https://aka.ms/augs-openai"
+  }
+]

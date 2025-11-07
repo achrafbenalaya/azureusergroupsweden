@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Azure User Group Sweden</title>
+    <meta
+      name="description"
+      content="Connect with Azure User Group Sweden through social media or get in touch with the community organizers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/azure-grid.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="nav__brand" href="index.html">
+          <span class="nav__logo">AU</span>
+          <span>Azure User Group Sweden</span>
+        </a>
+        <nav>
+          <button
+            class="nav__toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >Menu</button>
+          <ul class="nav__links" id="primary-navigation" data-nav-links>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero hero--compact">
+      <div class="container">
+        <div class="hero__logo" aria-hidden="true">
+          <span>AU</span>
+        </div>
+        <h1 class="hero__title">Stay Connected</h1>
+        <p class="hero__text">
+          Reach out to the organizing team, follow our livestreams, or start a conversation across our social channels.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <div class="container contact-grid">
+          <div class="card contact-card">
+            <h3 class="card__title">Follow &amp; Engage</h3>
+            <p>
+              Join the conversation, catch our latest sessions, and share your Azure questions or demos with the
+              community.
+            </p>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.c-sharpcorner.com/live/" target="_blank" rel="noopener noreferrer">C# Corner Livestream</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="badge">Contact the Organizers</div>
+            <h2>Send a message</h2>
+            <p>
+              We&apos;re always looking for speaker submissions, sponsor partnerships, and feedback on future Azure
+              sessions. Fill out the form and we&apos;ll respond as soon as we can.
+            </p>
+            <form class="form" id="contact-form">
+              <div class="form__group">
+                <label for="full-name">Name</label>
+                <input id="full-name" name="full-name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form__group">
+                <label for="organization">Organization</label>
+                <input id="organization" name="organization" type="text" placeholder="Company or community" />
+              </div>
+              <div class="form__group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us how we can help" required></textarea>
+              </div>
+              <button class="btn btn--primary" type="submit">Send message</button>
+              <p>
+                This form submits on the front-end only. Integrate with Azure Static Web Apps, Logic Apps, or your
+                preferred automation to process responses.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer__content">
+        <span class="footer__brand">Azure User Group Sweden</span>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a>
+        </div>
+        <small>&copy; <span id="year"></span> Azure User Group Sweden. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>Top</button>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

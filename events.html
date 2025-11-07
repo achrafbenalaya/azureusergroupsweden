@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events | Azure User Group Sweden</title>
+    <meta name="description" content="Discover upcoming Azure User Group Sweden meetups, workshops, and livestreams." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/azure-grid.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="nav__brand" href="index.html">
+          <span class="nav__logo">AU</span>
+          <span>Azure User Group Sweden</span>
+        </a>
+        <nav>
+          <button
+            class="nav__toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >Menu</button>
+          <ul class="nav__links" id="primary-navigation" data-nav-links>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero hero--compact">
+      <div class="container">
+        <div class="hero__logo" aria-hidden="true">
+          <span>AU</span>
+        </div>
+        <h1 class="hero__title">Upcoming Events</h1>
+        <p class="hero__text">
+          Meet the Azure community across Sweden and online. Every session is designed to spark discussion, collaboration,
+          and practical learning.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Community Calendar</h2>
+            <p class="section__subtitle">
+              Events automatically load from <code>data/events.json</code>. Update the JSON file to publish the latest
+              sessions for Azure Static Web Apps deployments.
+            </p>
+          </div>
+
+          <!-- Modern Event Controls -->
+          <div class="event-controls">
+            <div class="search-box">
+              <input 
+                type="search" 
+                class="search-input" 
+                placeholder="Search events..." 
+                aria-label="Search events"
+                data-search-input
+              />
+            </div>
+            
+            <div class="filter-group">
+              <button class="filter-btn active" data-filter="all">
+                All Events
+                <span class="filter-count" data-count="all">0</span>
+              </button>
+              <button class="filter-btn" data-filter="online">
+                Online
+                <span class="filter-count" data-count="online">0</span>
+              </button>
+              <button class="filter-btn" data-filter="local">
+                In-Person
+                <span class="filter-count" data-count="local">0</span>
+              </button>
+            </div>
+
+            <div class="view-toggle">
+              <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <rect x="2" y="2" width="6" height="6" rx="1"/>
+                  <rect x="12" y="2" width="6" height="6" rx="1"/>
+                  <rect x="2" y="12" width="6" height="6" rx="1"/>
+                  <rect x="12" y="12" width="6" height="6" rx="1"/>
+                </svg>
+              </button>
+              <button class="view-btn" data-view="list" aria-label="List view">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <rect x="2" y="3" width="16" height="2" rx="1"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1"/>
+                  <rect x="2" y="15" width="16" height="2" rx="1"/>
+                </svg>
+              </button>
+              <button class="view-btn" data-view="timeline" aria-label="Timeline view">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <circle cx="4" cy="4" r="2"/>
+                  <circle cx="4" cy="10" r="2"/>
+                  <circle cx="4" cy="16" r="2"/>
+                  <rect x="8" y="3" width="10" height="2" rx="1"/>
+                  <rect x="8" y="9" width="10" height="2" rx="1"/>
+                  <rect x="8" y="15" width="10" height="2" rx="1"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Skeleton Loader -->
+          <div class="skeleton-loader" data-skeleton-loader>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
+
+          <!-- Events Container -->
+          <div class="events-list view-grid" data-events-list></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container grid-two">
+          <div class="card">
+            <h3 class="card__title">How to update the events</h3>
+            <p>
+              Edit the <code>data/events.json</code> file and submit your changes via pull request or direct commit. Each
+              deployment of Azure Static Web Apps will serve the updated list automatically.
+            </p>
+            <p>
+              Remember to include a descriptive title, ISO 8601 date, start time, event type, image path, and (optional)
+              registration link.
+            </p>
+          </div>
+          <div>
+            <h3>Featuring speakers from</h3>
+            <ul class="values-list">
+              <li>
+                <div>
+                  <strong>Microsoft MVPs</strong>
+                  <span>Sharing real-world Azure adoption stories.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Azure Engineering</strong>
+                  <span>Product managers and engineers providing roadmap insights.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Community Builders</strong>
+                  <span>Local leaders championing inclusive and sustainable cloud solutions.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer__content">
+        <span class="footer__brand">Azure User Group Sweden</span>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a>
+        </div>
+        <small>&copy; <span id="year"></span> Azure User Group Sweden. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- Mobile Filter FAB -->
+    <button class="mobile-filter-fab" type="button" aria-label="Filters" data-mobile-filter>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="4" y1="6" x2="20" y2="6"></line>
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="18" x2="20" y2="18"></line>
+        <circle cx="7" cy="6" r="2" fill="currentColor"></circle>
+        <circle cx="15" cy="12" r="2" fill="currentColor"></circle>
+        <circle cx="11" cy="18" r="2" fill="currentColor"></circle>
+      </svg>
+    </button>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>Top</button>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
