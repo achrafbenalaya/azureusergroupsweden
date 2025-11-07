@@ -1,4 +1,19 @@
 [
+
+    {
+    "title": "Hands-On with GitHub Copilot: Agents, Automation, and MCP Integration",
+    "date": "2025-11-08",
+    "time": "12:00 CET",
+    "type": "Online",
+    "image": "/assets/images/achraf.png",
+    "location": "",
+    "registrationUrl": "https://aka.ms/augs-ai-session",
+    "category": "AI & Github Copilot & MCP Server",
+    "status": "upcoming",
+    "speaker": "Achraf Ben Alaya",
+    "speakerTitle": "Microsoft MVP - Microsoft Azure",
+    "description": "learn the basics of GitHub Copilot in VS Code, then take a deeper dive into agent mode."
+  },
   {
     "title": "Intro to Azure AI",
     "date": "2025-11-15",
