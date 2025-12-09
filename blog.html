@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | Azure User Group Sweden</title>
+    <meta
+      name="description"
+      content="Read blog posts and updates from the Azure User Group Sweden community."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/azure-grid.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="nav__brand" href="index.html">
+          <span class="nav__logo">AU</span>
+          <span>Azure User Group Sweden</span>
+        </a>
+        <nav>
+          <button
+            class="nav__toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >Menu</button>
+          <ul class="nav__links" id="primary-navigation" data-nav-links>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero hero--compact">
+      <div class="container">
+        <div class="hero__logo" aria-hidden="true">
+          <span>AU</span>
+        </div>
+        <h1 class="hero__title">Blog</h1>
+        <p class="hero__text">
+          Blog coming soon
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Stay Tuned</h2>
+            <p class="section__subtitle">
+              We are working on bringing you insightful blog posts and community updates. Check back soon!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer__content">
+        <span class="footer__brand">Azure User Group Sweden</span>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a>
+        </div>
+        <small>&copy; <span id="year"></span> Azure User Group Sweden. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>Top</button>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
